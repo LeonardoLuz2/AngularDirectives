@@ -11,7 +11,16 @@ export class SelectionComponent implements OnInit {
   constructor(private modalService: NgbModal, ) { }
 
   @Output() onSelection = new EventEmitter();
-
+  rows = [
+    { name: 'Austin', gender: 'Male', age: '1' },
+    { name: 'Dany', gender: 'Male', age: '2' },
+    { name: 'Molly', gender: 'Female', age: '3' },
+  ];
+  columns = [
+    { prop: 'name' },
+    { name: 'Gender' },
+    { name: 'Company' }
+  ];
   ngOnInit() {
   }
 

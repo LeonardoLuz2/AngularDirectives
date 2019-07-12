@@ -8,6 +8,7 @@ import { SelectionComponent } from './selection/selection.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FocusDirective } from 'src/directives/focus.directive';
 import { FocusConsoleDirective } from 'src/directives/focus2.directive';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FocusConsoleDirective } from 'src/directives/focus2.directive';
     FocusConsoleDirective
   ],
   imports: [
+    NgxDatatableModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
